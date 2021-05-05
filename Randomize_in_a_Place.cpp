@@ -22,7 +22,7 @@ void RiaP(int arr[], int n){//Randomize in a place algo
     srand(time(0));
     
     for (int i = 0; i < 5; i++)
-        swap(arr[i], arr[rand()%n]);   //O(n)
+        swap(arr[i], arr[rand()%(n-i)+i]);   //O(n)
     
 }
 
